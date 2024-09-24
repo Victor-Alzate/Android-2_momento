@@ -28,7 +28,7 @@ public class UserEditActivity extends AppCompatActivity {
     TextView editTextUsername, editTextEmail, editTextImageUrl, editTextApellido, editTextEdad, editTextBarrio, editTextIdCargo;
     Button buttonUpdateUser;
 
-    private long userId;
+    private String userId;
     private String username;
     private String apellido;
     private int edad;
@@ -62,7 +62,7 @@ public class UserEditActivity extends AppCompatActivity {
         buttonUpdateUser = findViewById(R.id.buttonUpdateUser);
 
         Intent intent = getIntent();
-        userId = intent.getLongExtra("USER_ID", -1);
+        userId = intent.getStringExtra("USER_ID");
         username = intent.getStringExtra("USERNAME");
         email = intent.getStringExtra("EMAIL");
         apellido = intent.getStringExtra("APELLIDO");

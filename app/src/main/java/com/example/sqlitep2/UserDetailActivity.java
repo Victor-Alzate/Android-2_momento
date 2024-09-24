@@ -32,7 +32,7 @@ public class UserDetailActivity extends AppCompatActivity {
     ImageView imageViewUser;
     Button buttonUpdateUser, buttonDeleteUser;
 
-    private long userId;
+    private String userId;
     private String username;
     private String apellido;
     private int edad;
@@ -66,7 +66,7 @@ public class UserDetailActivity extends AppCompatActivity {
         buttonDeleteUser = findViewById(R.id.buttonDeleteUser);
 
         Intent intent = getIntent();
-        userId = intent.getLongExtra("USER_ID", -1);
+        userId = intent.getStringExtra("USER_ID");
         username = intent.getStringExtra("USERNAME");
         email = intent.getStringExtra("EMAIL");
         apellido = intent.getStringExtra("APELLIDO");

@@ -28,7 +28,6 @@ public class UserListActivity extends AppCompatActivity {
 
     DatabaseManager dbManager;
     private UserDao userDao;
-
     private RecyclerView recyclerView;
     private UserAdapter adapter;
     private Button btnMenu;

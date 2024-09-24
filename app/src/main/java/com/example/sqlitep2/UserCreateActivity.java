@@ -58,7 +58,7 @@ public class UserCreateActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 User user = new User();
-                user.setId(Long.parseLong(editTextIdUser.getText().toString()));
+                user.setId(editTextIdUser.getText().toString());
                 user.setUsername(editTextUsername.getText().toString());
                 user.setApellido(editTextApellido.getText().toString());
                 user.setEdad(Integer.parseInt(editTextEdad.getText().toString()));

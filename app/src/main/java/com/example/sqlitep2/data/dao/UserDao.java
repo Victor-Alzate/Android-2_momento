@@ -49,7 +49,7 @@ public class UserDao {
             int idcargo = cursor.getColumnIndexOrThrow(Constants.COLUMN_IDCARGO);
             int imageIndex = cursor.getColumnIndexOrThrow(Constants.COLUMN_IMAGE);
 
-            user.setId(cursor.getLong(idIndex));
+            user.setId(cursor.getString(idIndex));
             user.setUsername(cursor.getString(usernameIndex));
             user.setApellido(cursor.getString(userapellidoIndex));
             user.setEdad(Integer.parseInt(cursor.getString(edad)));
@@ -78,7 +78,7 @@ public class UserDao {
 
             do {
                 User user = new User();
-                user.setId(cursor.getLong(idIndex));
+                user.setId(cursor.getString(idIndex));
                 user.setUsername(cursor.getString(usernameIndex));
                 user.setApellido(cursor.getString(userapellidoIndex));
                 user.setEdad(Integer.parseInt(cursor.getString(edad)));

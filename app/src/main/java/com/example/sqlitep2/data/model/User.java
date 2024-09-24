@@ -1,7 +1,7 @@
 package com.example.sqlitep2.data.model;
 
 public class User {
-    private long id;
+    private String id;
     private String username;
     private String email;
     private String imageUrl;
@@ -14,7 +14,7 @@ public class User {
 
     }
 
-    public User(long id, int edad, String id_cargo, String barrio, String apellido, String imageUrl, String email, String username) {
+    public User(String id, int edad, String id_cargo, String barrio, String apellido, String imageUrl, String email, String username) {
         this.id = id;
         this.edad = edad;
         this.id_cargo = id_cargo;
@@ -25,11 +25,11 @@ public class User {
         this.username = username;
     }
 
-    public long getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(String id) {
         this.id = id;
     }
 

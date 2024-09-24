@@ -2,7 +2,7 @@ package com.example.sqlitep2.util;
 
 public class Constants {
     public static final String DATABASE_NAME = "myapp.db";
-    public static final int DATABASE_VERSION = 7;
+    public static final int DATABASE_VERSION = 8;
 
     public static final String TABLE_USER = "users";
     public static final String TABLE_PRODUCT = "products";
